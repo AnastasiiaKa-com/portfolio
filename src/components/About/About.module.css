@@ -1,0 +1,33 @@
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+  }
+  
+  .card {
+    max-width: 700px;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h2 {
+    margin-bottom: 20px;
+    color: var(--accent);
+  }
+  
+  .card p {
+    margin-bottom: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-size: 16px;
+  }

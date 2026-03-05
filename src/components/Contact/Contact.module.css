@@ -1,0 +1,63 @@
+.contact {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  border-radius: 20px;
+  background: #14141c;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid rgba(127, 90, 240, 0.2);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.card p {
+  color:#c1c1d5;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.info {
+  margin: 20px 0 40px 0;
+  color: #a0a0b3;
+}
+
+
+.button {
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.primary {
+  border: none;
+  background: linear-gradient(#252428, #7e6e95);
+  color: white;
+}
+
+.primary:hover {
+  box-shadow: 0 10px 25px rgba(127, 90, 240, 0.3);
+  transform: scale(1.05);
+}

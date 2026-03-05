@@ -1,0 +1,44 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f14;
+  color: #ffffff;
+  line-height: 1.6;
+  background: radial-gradient(
+    circle at 20% 20%,
+    rgba(127, 90, 240, 0.1),
+    transparent 40%
+  ),
+  radial-gradient(
+    circle at 80% 80%,
+    rgba(172, 211, 195, 0.08),
+    transparent 40%
+  ),
+  #0f0f14;
+}
+
+/* Container */
+.container {
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Gradient text */
+.gradientText {
+  background: linear-gradient(90deg, #7f5af0, #7e73c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
