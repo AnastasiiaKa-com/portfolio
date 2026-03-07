@@ -11,10 +11,10 @@ const Projects = () => {
        
           <div className={styles.card}>
             <div className={styles.image}>
-              <img
-                src="/movie-preview.png"
-                alt="Movie App preview"
-              />
+            <img
+            src={`${import.meta.env.BASE_URL}movie-preview.png`}
+            alt="Movie App preview"
+             />
             </div>
 
             <h3>Movie App</h3>
@@ -43,10 +43,10 @@ const Projects = () => {
 
           <div className={styles.card}>
             <div className={styles.image}>
-              <img
-                src="/weather-preview.png"
-                alt="Weather App preview"
-              />
+            <img
+           src={`${import.meta.env.BASE_URL}weather-preview.png`}
+           alt="Weather App preview"
+               />
             </div>
 
             <h3>Weather App</h3>

@@ -1,18 +1,18 @@
 import Reveal from "../Reveal";
 import styles from "./Skills.module.css";
 import { motion } from "framer-motion";
+import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
+import { SiJavascript, SiTypescript, SiRedux, SiVite } from "react-icons/si";
 
 const skills = [
-  "HTML5",
-  "CSS3",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "React Router",
-  "Redux",
-  "REST API",
-  "Git",
-  "Vite",
+  { name: "HTML5", icon: <FaHtml5 /> },
+  { name: "CSS3", icon: <FaCss3Alt /> },
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "TypeScript", icon: <SiTypescript /> },
+  { name: "React", icon: <FaReact /> },
+  { name: "Redux", icon: <SiRedux /> },
+  { name: "Git", icon: <FaGitAlt /> },
+  { name: "Vite", icon: <SiVite /> },
 ];
 
 const Skills = () => {
@@ -32,10 +32,12 @@ const Skills = () => {
                 transition={{ delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                {skill}
+                <div className={styles.icon}>{skill.icon}</div>
+                <span>{skill.name}</span>
               </motion.div>
             ))}
           </div>
+
         </div>
       </section>
     </Reveal>
